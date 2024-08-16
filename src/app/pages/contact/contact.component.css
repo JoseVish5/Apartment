@@ -1,0 +1,74 @@
+.contact-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .contact-section h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .contact-form mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact-details {
+    margin-top: 50px;
+  }
+  
+  .contact-details h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-details p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  .map {
+    margin-top: 30px;
+    height: 300px;
+    width: 100%;
+    background-color: #f2f2f2; /* Placeholder for actual map */
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+
+    .contact-section {
+      padding: 50px 20px;
+      background-color: #ffffff;
+      text-align: center;
+      margin-left: 11px;
+    }
+
+    .contact-form {
+      padding: 0 15px;
+    }
+  }
+  

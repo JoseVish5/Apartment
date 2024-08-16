@@ -1,0 +1,18 @@
+<div class="details-section">
+  <h1>Luxury Apartments Available</h1>
+  <p>Explore our various types of apartments with stunning views and modern interiors.</p>
+  
+  <div class="apartment-list">
+    <div class="apartment" *ngFor="let flat of flats">
+      <img [src]="flat.image" alt="Apartment image">
+      <h2>{{ flat.title }}</h2>
+      <p>{{ flat.description }}</p>
+      <p><strong>Size:</strong> {{ flat.size }}</p>
+      <p><strong>Price:</strong> {{ flat.price }}</p>
+      <p><strong>Bedrooms:</strong> {{ flat.bedrooms }} | <strong>Bathrooms:</strong> {{ flat.bathrooms }}</p>
+      <button mat-raised-button color="primary" (click)="bookVisit(flat)" [disabled]="!flat.available">
+        {{ flat.available ? 'Book a Visit' : 'Unavailable' }}
+      </button>
+    </div>
+  </div>
+</div>
